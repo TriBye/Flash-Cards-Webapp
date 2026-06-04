@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flash Cards Webapp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Study deck</p>
+        <h1 id="deck-title">Flashcards</h1>
+      </div>
+      <div class="header-actions">
+        <span id="card-count" class="count-pill">0 cards</span>
+        <button id="open-button" class="icon-button text-button" type="button" aria-label="Open JSON deck">
+          <span aria-hidden="true">&#128193;</span>
+          Open JSON
+        </button>
+        <button id="export-button" class="icon-button text-button" type="button" aria-label="Export JSON deck">
+          <span aria-hidden="true">&#8681;</span>
+          Export
+        </button>
+        <button id="shuffle-button" class="icon-button text-button" type="button" aria-label="Shuffle cards">
+          <span aria-hidden="true">&#8635;</span>
+          Shuffle
+        </button>
+        <input id="file-input" type="file" accept=".json,application/json" hidden>
+      </div>
+    </header>
+
+    <main>
+      <section id="status" class="status" aria-live="polite">Loading cards...</section>
+      <section class="study-stage" aria-label="Flashcard viewer">
+        <button id="previous-card" class="nav-button icon-button" type="button" aria-label="Previous card" title="Previous card">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <section id="card-stage" class="single-card" aria-label="Current flashcard"></section>
+        <button id="next-card" class="nav-button icon-button" type="button" aria-label="Next card" title="Next card">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

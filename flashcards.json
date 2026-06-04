@@ -1,0 +1,1449 @@
+{
+  "title": "Economics syllabus clashcards",
+  "source_file": "144862724451682.pdf(1).pdf",
+  "format_note": "Each clashcard has a context-specific front and a short, accurate definition as the back.",
+  "source_note": "Cards are based on the visible 'Suggested concepts' boxes in the uploaded 4-page syllabus excerpt. Terms visibly crossed out in the source are included and marked as 'crossed_out_in_source'.",
+  "card_count": 144,
+  "clashcards": [
+    {
+      "id": "card_001",
+      "chapter": "D1 Market structures",
+      "concept_group": "General market structures",
+      "keyword": "perfect vs. imperfect competition",
+      "front": "D1 Market structures — perfect vs. imperfect competition",
+      "back": "Perfect competition has many firms and no market power; imperfect competition gives firms some market power.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_002",
+      "chapter": "D1 Market structures",
+      "concept_group": "General market structures",
+      "keyword": "market forms",
+      "front": "D1 Market structures — market forms",
+      "back": "Different structures of markets, such as perfect competition, monopoly, oligopoly and monopolistic competition.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_003",
+      "chapter": "D1 Market structures",
+      "concept_group": "General market structures",
+      "keyword": "economic models vs. real markets",
+      "front": "D1 Market structures — economic models vs. real markets",
+      "back": "Models simplify reality; real markets usually do not fully match model assumptions.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_004",
+      "chapter": "D1 Market structures",
+      "concept_group": "General market structures",
+      "keyword": "characteristics / conditions",
+      "front": "D1 Market structures — characteristics / conditions",
+      "back": "The features needed for a market structure, such as number of firms, barriers and product type.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_005",
+      "chapter": "D1 Market structures",
+      "concept_group": "General market structures",
+      "keyword": "assumptions",
+      "front": "D1 Market structures — assumptions",
+      "back": "Simplifying ideas used to build an economic model, for example perfect information or rational behaviour.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_006",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "infinite number of firms",
+      "front": "D1 Market structures — infinite number of firms",
+      "back": "In perfect competition, there are so many small firms that no single firm can influence price.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_007",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "market power",
+      "front": "D1 Market structures — market power",
+      "back": "In perfect competition, firms have no market power and must accept the market price.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_008",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "price taker",
+      "front": "D1 Market structures — price taker",
+      "back": "A firm that accepts the market price because it is too small to influence it.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_009",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "price maker",
+      "front": "D1 Market structures — price maker",
+      "back": "A firm able to influence price; in perfect competition firms are not price makers.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_010",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "identical / homogeneous product",
+      "front": "D1 Market structures — identical / homogeneous product",
+      "back": "All firms sell the same product, so consumers see no difference between suppliers.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_011",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "barriers to entry and exit",
+      "front": "D1 Market structures — barriers to entry and exit",
+      "back": "In perfect competition, firms can enter or leave the market freely and cheaply.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_012",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "allocative efficiency",
+      "front": "D1 Market structures — allocative efficiency",
+      "back": "Resources are allocated so that price equals marginal cost, maximizing social welfare.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_013",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "externalities",
+      "front": "D1 Market structures — externalities",
+      "back": "Costs or benefits affecting third parties; they can stop even competitive markets being socially efficient.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_014",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "supernormal profits competed away",
+      "front": "D1 Market structures — supernormal profits competed away",
+      "back": "In the long run, new firms enter and reduce profits until only normal profit remains.",
+      "source_page": 1,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_015",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "equilibrium positions",
+      "front": "D1 Market structures — equilibrium positions",
+      "back": "Market outcomes where demand equals supply and firms have no incentive to change output.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_016",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "long-run normal profit",
+      "front": "D1 Market structures — long-run normal profit",
+      "back": "In perfect competition, firms earn just enough profit to keep resources in the industry.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_017",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "productive efficiency",
+      "front": "D1 Market structures — productive efficiency",
+      "back": "Production occurs at the lowest possible average cost.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_018",
+      "chapter": "D1 Market structures",
+      "concept_group": "Perfect competition",
+      "keyword": "government competition policies",
+      "front": "D1 Market structures — government competition policies",
+      "back": "Policies used to maintain fair competition and prevent excessive market power.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_019",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "single seller",
+      "front": "D1 Market structures — single seller",
+      "back": "A monopoly market has one dominant seller supplying the product.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_020",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "pure monopoly",
+      "front": "D1 Market structures — pure monopoly",
+      "back": "A market structure with only one firm and no close substitutes.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_021",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "market share",
+      "front": "D1 Market structures — market share",
+      "back": "The percentage of total market sales controlled by one firm.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_022",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "monopoly power",
+      "front": "D1 Market structures — monopoly power",
+      "back": "The ability of a firm to influence price because it faces little or no competition.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_023",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "competitors",
+      "front": "D1 Market structures — competitors",
+      "back": "Other firms in the market; in monopoly, competitors are absent or weak.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_024",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "price maker",
+      "front": "D1 Market structures — price maker",
+      "back": "A monopolist can set or strongly influence price rather than accept the market price.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_025",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "barriers to entry",
+      "front": "D1 Market structures — barriers to entry",
+      "back": "Obstacles that stop new firms entering, such as patents, high costs or control of resources.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_026",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "advertising and product differentiation",
+      "front": "D1 Market structures — advertising and product differentiation",
+      "back": "Methods monopolists use to strengthen brand image and reduce substitutability.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_027",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "consumer choice",
+      "front": "D1 Market structures — consumer choice",
+      "back": "The range of options available to consumers; monopoly usually reduces choice.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_028",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "productive inefficiency",
+      "front": "D1 Market structures — productive inefficiency",
+      "back": "A monopolist may not produce at the lowest average cost due to weak competition.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_029",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "allocative inefficiency",
+      "front": "D1 Market structures — allocative inefficiency",
+      "back": "A monopolist often restricts output and sets price above marginal cost.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_030",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "innovation",
+      "front": "D1 Market structures — innovation",
+      "back": "Monopolies may innovate using large profits, but weak competition can also reduce pressure to innovate.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_031",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "x-inefficiency",
+      "front": "D1 Market structures — x-inefficiency",
+      "back": "Costs are higher than necessary because lack of competition reduces pressure to be efficient.",
+      "source_page": 1,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_032",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "natural monopoly",
+      "front": "D1 Market structures — natural monopoly",
+      "back": "A market where one firm can supply the whole market more cheaply due to economies of scale.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_033",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "economies of scale",
+      "front": "D1 Market structures — economies of scale",
+      "back": "Average costs fall as output rises, often strengthening monopoly power.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_034",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "innovative ideas",
+      "front": "D1 Market structures — innovative ideas",
+      "back": "New products, processes or methods that may be protected and used to gain market power.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_035",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "intellectual property rights",
+      "front": "D1 Market structures — intellectual property rights",
+      "back": "Legal protection of ideas, designs or inventions, such as copyright and patents.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_036",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "copyright",
+      "front": "D1 Market structures — copyright",
+      "back": "Legal protection for creative work that can act as a barrier to entry.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_037",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "patents",
+      "front": "D1 Market structures — patents",
+      "back": "Legal protection for inventions, giving temporary monopoly rights.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_038",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "protection",
+      "front": "D1 Market structures — protection",
+      "back": "Legal or market barriers that shield a firm from competitors.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_039",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "incentive",
+      "front": "D1 Market structures — incentive",
+      "back": "A reason to act; monopoly profit can be an incentive to invest or innovate.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_040",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "risk",
+      "front": "D1 Market structures — risk",
+      "back": "The uncertainty a firm faces when investing, innovating or entering a market.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_041",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolies",
+      "keyword": "price discrimination",
+      "front": "D1 Market structures — price discrimination",
+      "back": "Charging different consumer groups different prices for the same product when possible.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_042",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "concentration ratio",
+      "front": "D1 Market structures — concentration ratio",
+      "back": "The share of market sales controlled by the largest firms in an oligopoly.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_043",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "domination",
+      "front": "D1 Market structures — domination",
+      "back": "A few large firms control most of the market.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_044",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "competition",
+      "front": "D1 Market structures — competition",
+      "back": "Firms rival each other through price, quality, advertising or innovation.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_045",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "collusion",
+      "front": "D1 Market structures — collusion",
+      "back": "Firms cooperate to reduce competition, often by fixing prices or output.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_046",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "formal collusion",
+      "front": "D1 Market structures — formal collusion",
+      "back": "Explicit agreement between firms, such as a cartel, usually illegal.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_047",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "informal collusion",
+      "front": "D1 Market structures — informal collusion",
+      "back": "Tacit cooperation without an open agreement, for example following a price leader.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_048",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "price competition",
+      "front": "D1 Market structures — price competition",
+      "back": "Firms compete mainly by lowering prices or offering discounts.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_049",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "non-price competition",
+      "front": "D1 Market structures — non-price competition",
+      "back": "Firms compete through branding, quality, service, advertising or product features.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_050",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "efficiency",
+      "front": "D1 Market structures — efficiency",
+      "back": "How well firms use resources; oligopoly can be efficient through scale but may waste resources through market power.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_051",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "interdependence",
+      "front": "D1 Market structures — interdependence",
+      "back": "Each firm’s decisions depend on expected reactions from rival firms.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_052",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "kinked demand curve model",
+      "front": "D1 Market structures — kinked demand curve model",
+      "back": "A model explaining price rigidity in oligopoly because rivals react differently to price rises and cuts.",
+      "source_page": 1,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_053",
+      "chapter": "D1 Market structures",
+      "concept_group": "Oligopolies",
+      "keyword": "game theory",
+      "front": "D1 Market structures — game theory",
+      "back": "Analysis of strategic decision-making where each firm considers rivals’ likely responses.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_054",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolistic competition",
+      "keyword": "real-life industries",
+      "front": "D1 Market structures — real-life industries",
+      "back": "Many real markets fit monopolistic competition better than pure theoretical models.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_055",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolistic competition",
+      "keyword": "short-run monopoly position",
+      "front": "D1 Market structures — short-run monopoly position",
+      "back": "In the short run, differentiated products can give firms some price-making power and profit.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_056",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolistic competition",
+      "keyword": "long-run perfect competition position",
+      "front": "D1 Market structures — long-run perfect competition position",
+      "back": "In the long run, entry reduces supernormal profit, similar to competitive markets.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_057",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolistic competition",
+      "keyword": "price competition",
+      "front": "D1 Market structures — price competition",
+      "back": "Firms compete partly by changing prices, but products are differentiated.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_058",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolistic competition",
+      "keyword": "product differentiation",
+      "front": "D1 Market structures — product differentiation",
+      "back": "Firms make their product appear different through design, quality, branding or features.",
+      "source_page": 1,
+      "status": "visible"
+    },
+    {
+      "id": "card_059",
+      "chapter": "D1 Market structures",
+      "concept_group": "Monopolistic competition",
+      "keyword": "brand loyalty",
+      "front": "D1 Market structures — brand loyalty",
+      "back": "Consumers repeatedly buy from one brand, giving the firm some market power.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_060",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "market failure",
+      "front": "D2 Market failure and government intervention — market failure",
+      "back": "A situation where the free market allocates resources inefficiently for society.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_061",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "merit goods",
+      "front": "D2 Market failure and government intervention — merit goods",
+      "back": "Goods society underconsumes because individuals underestimate their benefits, such as education.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_062",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "demerit goods",
+      "front": "D2 Market failure and government intervention — demerit goods",
+      "back": "Goods society overconsumes because individuals underestimate their costs, such as cigarettes.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_063",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "public goods",
+      "front": "D2 Market failure and government intervention — public goods",
+      "back": "Goods that are non-rival and non-excludable, so markets may not provide them sufficiently.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_064",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "imperfect information",
+      "front": "D2 Market failure and government intervention — imperfect information",
+      "back": "Consumers or producers lack full information, causing poor decisions and inefficient outcomes.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_065",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "inequity",
+      "front": "D2 Market failure and government intervention — inequity",
+      "back": "An unfair distribution of income, wealth or access to goods and services.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_066",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "immobile factors of production",
+      "front": "D2 Market failure and government intervention — immobile factors of production",
+      "back": "Resources such as labour or capital cannot easily move to where they are most needed.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_067",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "positive externalities",
+      "front": "D2 Market failure and government intervention — positive externalities",
+      "back": "Benefits to third parties not reflected in the market price, causing underproduction.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_068",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "negative externalities",
+      "front": "D2 Market failure and government intervention — negative externalities",
+      "back": "Costs to third parties not reflected in the market price, causing overproduction.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_069",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "third parties",
+      "front": "D2 Market failure and government intervention — third parties",
+      "back": "People affected by production or consumption despite not being directly involved in the transaction.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_070",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "taxation",
+      "front": "D2 Market failure and government intervention — taxation",
+      "back": "A government charge that can reduce harmful production or consumption.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_071",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "subsidies",
+      "front": "D2 Market failure and government intervention — subsidies",
+      "back": "Government payments that lower costs and encourage beneficial production or consumption.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_072",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "price controls",
+      "front": "D2 Market failure and government intervention — price controls",
+      "back": "Government-set maximum or minimum prices to influence market outcomes.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_073",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "state provision",
+      "front": "D2 Market failure and government intervention — state provision",
+      "back": "The government directly supplies goods or services when markets underprovide them.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_074",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "privatisation",
+      "front": "D2 Market failure and government intervention — privatisation",
+      "back": "Transfer of production or ownership from the state to private firms.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_075",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "regulation",
+      "front": "D2 Market failure and government intervention — regulation",
+      "back": "Rules or laws used to control firm or consumer behaviour.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_076",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "deregulation",
+      "front": "D2 Market failure and government intervention — deregulation",
+      "back": "Removing rules to increase competition or flexibility in a market.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_077",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "competition policy",
+      "front": "D2 Market failure and government intervention — competition policy",
+      "back": "Government action to prevent monopolies, cartels or abuse of market power.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_078",
+      "chapter": "D2 Market failure and government intervention",
+      "concept_group": "Market failure",
+      "keyword": "government failure",
+      "front": "D2 Market failure and government intervention — government failure",
+      "back": "When government intervention worsens efficiency or creates unintended costs.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_079",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "derived demand",
+      "front": "D3 Labour markets — derived demand",
+      "back": "Demand for labour comes from demand for the goods and services workers produce.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_080",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "marginal productivity theory",
+      "front": "D3 Labour markets — marginal productivity theory",
+      "back": "Firms hire workers according to the extra output or revenue each worker adds.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_081",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "elastic demand for labour",
+      "front": "D3 Labour markets — elastic demand for labour",
+      "back": "Quantity of labour demanded changes strongly when wages change.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_082",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "inelastic demand for labour",
+      "front": "D3 Labour markets — inelastic demand for labour",
+      "back": "Quantity of labour demanded changes little when wages change.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_083",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "supply of labour: individual",
+      "front": "D3 Labour markets — supply of labour: individual",
+      "back": "The hours or effort one worker is willing to offer at different wage rates.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_084",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "supply of labour: occupation",
+      "front": "D3 Labour markets — supply of labour: occupation",
+      "back": "The number of workers willing and able to work in a specific job or sector.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_085",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "job satisfaction",
+      "front": "D3 Labour markets — job satisfaction",
+      "back": "Non-wage benefits from work, such as enjoyment, status, security or conditions.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_086",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "opportunity cost of work",
+      "front": "D3 Labour markets — opportunity cost of work",
+      "back": "The value of leisure or alternatives given up when choosing to work.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_087",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "labour supply elasticity: low-skilled vs. skilled jobs",
+      "front": "D3 Labour markets — labour supply elasticity: low-skilled vs. skilled jobs",
+      "back": "Low-skilled labour is often more elastic; skilled labour is often less elastic due to training needs.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_088",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "net migration",
+      "front": "D3 Labour markets — net migration",
+      "back": "Immigration minus emigration; it changes the size and skills of labour supply.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_089",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "wages",
+      "front": "D3 Labour markets — wages",
+      "back": "The price paid for labour, usually per hour, week or month.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_090",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "wage differentials",
+      "front": "D3 Labour markets — wage differentials",
+      "back": "Differences in wages between workers, jobs, sectors or regions.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_091",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "trade unions",
+      "front": "D3 Labour markets — trade unions",
+      "back": "Worker organisations that bargain for wages, conditions and rights.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_092",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "labour market discrimination",
+      "front": "D3 Labour markets — labour market discrimination",
+      "back": "Unequal treatment of workers based on personal characteristics rather than productivity.",
+      "source_page": 2,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_093",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "labour market imperfections",
+      "front": "D3 Labour markets — labour market imperfections",
+      "back": "Factors preventing wages and employment from adjusting efficiently.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_094",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "economic inactivity",
+      "front": "D3 Labour markets — economic inactivity",
+      "back": "People of working age who are not employed and not actively seeking work.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_095",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "imperfect information",
+      "front": "D3 Labour markets — imperfect information",
+      "back": "Workers or firms lack full information about jobs, wages or worker quality.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_096",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "skill shortages",
+      "front": "D3 Labour markets — skill shortages",
+      "back": "Too few workers have the skills demanded by employers.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_097",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "geographical immobility",
+      "front": "D3 Labour markets — geographical immobility",
+      "back": "Workers cannot easily move location to take available jobs.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_098",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "occupational immobility",
+      "front": "D3 Labour markets — occupational immobility",
+      "back": "Workers cannot easily switch jobs because they lack required skills or qualifications.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_099",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "minimum wages",
+      "front": "D3 Labour markets — minimum wages",
+      "back": "A legal wage floor below which workers cannot be paid.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_100",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "maximum wages",
+      "front": "D3 Labour markets — maximum wages",
+      "back": "A legal or agreed wage ceiling above which pay cannot rise.",
+      "source_page": 2,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_101",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "living wages",
+      "front": "D3 Labour markets — living wages",
+      "back": "A wage level intended to cover basic living costs.",
+      "source_page": 2,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_102",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "pensions",
+      "front": "D3 Labour markets — pensions",
+      "back": "Retirement income that can influence labour supply and retirement decisions.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_103",
+      "chapter": "D3 Labour markets",
+      "concept_group": "Labour demand and supply",
+      "keyword": "changing workforce",
+      "front": "D3 Labour markets — changing workforce",
+      "back": "Changes in workforce size, age, skills, gender composition or migration patterns.",
+      "source_page": 2,
+      "status": "visible"
+    },
+    {
+      "id": "card_104",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "income flows",
+      "front": "E Principles of macroeconomics — income flows",
+      "back": "Movement of income between households, firms, government, banks and the foreign sector.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_105",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "injections",
+      "front": "E Principles of macroeconomics — injections",
+      "back": "Spending entering the circular flow: investment, government spending and exports.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_106",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "withdrawals",
+      "front": "E Principles of macroeconomics — withdrawals",
+      "back": "Money leaving the circular flow: saving, taxation and imports.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_107",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "multiplier effect",
+      "front": "E Principles of macroeconomics — multiplier effect",
+      "back": "An initial change in spending causes a larger final change in national income.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_108",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "consumption",
+      "front": "E Principles of macroeconomics — consumption",
+      "back": "Household spending on goods and services.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_109",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "saving",
+      "front": "E Principles of macroeconomics — saving",
+      "back": "Income not spent on current consumption.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_110",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "investment",
+      "front": "E Principles of macroeconomics — investment",
+      "back": "Spending by firms on capital goods that increase productive capacity.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_111",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "government spending",
+      "front": "E Principles of macroeconomics — government spending",
+      "back": "Public-sector spending on goods, services and infrastructure.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_112",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "net export",
+      "front": "E Principles of macroeconomics — net export",
+      "back": "Exports minus imports; positive net exports add to aggregate demand.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_113",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "aggregate demand analysis: factors",
+      "front": "E Principles of macroeconomics — aggregate demand analysis: factors",
+      "back": "Analysis of total demand using factors such as consumption, investment, government spending and net exports.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_114",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "average propensity to consume (APC)",
+      "front": "E Principles of macroeconomics — average propensity to consume (APC)",
+      "back": "Total consumption divided by total income.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_115",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "average propensity to save (APS)",
+      "front": "E Principles of macroeconomics — average propensity to save (APS)",
+      "back": "Total saving divided by total income.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_116",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "marginal propensity to consume (MPC)",
+      "front": "E Principles of macroeconomics — marginal propensity to consume (MPC)",
+      "back": "The fraction of extra income spent on consumption.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_117",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "marginal propensity to save (MPS)",
+      "front": "E Principles of macroeconomics — marginal propensity to save (MPS)",
+      "back": "The fraction of extra income saved.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_118",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "multiplier formula",
+      "front": "E Principles of macroeconomics — multiplier formula",
+      "back": "Simple multiplier = 1 / MPW, or 1 / (1 - MPC) in a closed model.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_119",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "marginal propensity to withdraw (MPW)",
+      "front": "E Principles of macroeconomics — marginal propensity to withdraw (MPW)",
+      "back": "The fraction of extra income leaked through saving, tax or imports.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_120",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "aggregate supply analysis",
+      "front": "E Principles of macroeconomics — aggregate supply analysis",
+      "back": "Analysis of total output firms are willing to produce at different price levels.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_121",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "short-run aggregate supply (SRAS)",
+      "front": "E Principles of macroeconomics — short-run aggregate supply (SRAS)",
+      "back": "Total output firms supply in the short run when some costs are fixed.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_122",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "long-run aggregate supply (LRAS) curve",
+      "front": "E Principles of macroeconomics — long-run aggregate supply (LRAS) curve",
+      "back": "Shows the economy’s potential output when resources are fully used.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_123",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "Keynesian supply curve",
+      "front": "E Principles of macroeconomics — Keynesian supply curve",
+      "back": "A view of AS where output can rise without inflation when spare capacity exists.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_124",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "classical supply curve",
+      "front": "E Principles of macroeconomics — classical supply curve",
+      "back": "A view of LRAS as vertical at full-employment output.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_125",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "macroeconomic equilibrium",
+      "front": "E Principles of macroeconomics — macroeconomic equilibrium",
+      "back": "The point where aggregate demand equals aggregate supply.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_127",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "output gaps",
+      "front": "E Principles of macroeconomics — output gaps",
+      "back": "The difference between actual output and potential output.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_128",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "spare capacity",
+      "front": "E Principles of macroeconomics — spare capacity",
+      "back": "Unused resources that allow output to rise without strong inflationary pressure.",
+      "source_page": 4,
+      "status": "crossed_out_in_source"
+    },
+    {
+      "id": "card_129",
+      "chapter": "E Principles of macroeconomics",
+      "concept_group": "Circular flow, AD/AS and multiplier",
+      "keyword": "shifts in AD and AS curves",
+      "front": "E Principles of macroeconomics — shifts in AD and AS curves",
+      "back": "Changes in factors other than the price level move the AD or AS curve.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_130",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "economic growth",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — economic growth",
+      "back": "An increase in real output or real GDP over time.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_131",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "balanced government / national budget",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — balanced government / national budget",
+      "back": "Government spending equals government revenue.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_132",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "budget deficit",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — budget deficit",
+      "back": "Government spending is greater than government revenue.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_133",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "budget surplus",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — budget surplus",
+      "back": "Government revenue is greater than government spending.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_134",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "national debt",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — national debt",
+      "back": "The total accumulated amount the government owes.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_135",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "price stability",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — price stability",
+      "back": "Low and stable inflation.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_136",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "low unemployment",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — low unemployment",
+      "back": "A macroeconomic goal where most people willing and able to work can find jobs.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_137",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "equilibrium in the balance of payments",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — equilibrium in the balance of payments",
+      "back": "External payments are sustainable, without persistent large deficits or surpluses.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_138",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "equal distribution of income",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — equal distribution of income",
+      "back": "Income is shared more fairly across the population.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_139",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "sustainability",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — sustainability",
+      "back": "Economic activity meets current needs without damaging future living standards.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_140",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "economic stability",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — economic stability",
+      "back": "Avoiding large fluctuations in growth, inflation, employment and output.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_141",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "improving productivity",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — improving productivity",
+      "back": "Increasing output per unit of input, such as output per worker.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_143",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "rate of economic growth",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — rate of economic growth",
+      "back": "The percentage increase in real GDP over a period.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_144",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "rate of inflation",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — rate of inflation",
+      "back": "The percentage increase in the general price level over a period.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_145",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "level of unemployment",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — level of unemployment",
+      "back": "The number or percentage of people unemployed in the labour force.",
+      "source_page": 4,
+      "status": "visible"
+    },
+    {
+      "id": "card_146",
+      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
+      "concept_group": "Macroeconomic objectives and indicators",
+      "keyword": "state of the balance of payments",
+      "front": "S7 A Introduction to macroeconomic objectives and policies — state of the balance of payments",
+      "back": "The overall condition of a country’s transactions with the rest of the world.",
+      "source_page": 4,
+      "status": "visible"
+    }
+  ]
+}

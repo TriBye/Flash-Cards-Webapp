@@ -1,0 +1,377 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --text: #17202a;
+  --muted: #657487;
+  --line: #dde4ed;
+  --accent: #0f766e;
+  --accent-strong: #0b5f59;
+  --danger: #b42318;
+  --danger-bg: #fff1f0;
+  --shadow: 0 20px 50px rgba(20, 33, 48, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 32rem),
+    linear-gradient(135deg, #f6f7f9 0%, #eef3f7 45%, #f8fafc 100%);
+  color: var(--text);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 1.25rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3.5rem);
+  line-height: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.count-pill,
+.text-button {
+  min-height: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 8px 20px rgba(20, 33, 48, 0.08);
+}
+
+.count-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 0.9rem;
+  color: var(--muted);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.text-button {
+  gap: 0.45rem;
+  padding: 0.65rem 0.95rem;
+  font-weight: 800;
+}
+
+.text-button:hover:not(:disabled) {
+  border-color: rgba(15, 118, 110, 0.28);
+  color: var(--accent-strong);
+}
+
+.text-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+main {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.status {
+  margin: 1rem 0;
+  min-height: 1.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.study-stage {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 42rem) 3.4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: calc(100vh - 13rem);
+}
+
+.single-card {
+  width: 100%;
+  min-width: 0;
+}
+
+.nav-button {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-color: var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 28px rgba(20, 33, 48, 0.11);
+  color: var(--accent-strong);
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.nav-button:hover:not(:disabled),
+.nav-button:focus-visible {
+  border-color: rgba(15, 118, 110, 0.28);
+  transform: translateY(-1px);
+}
+
+.nav-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.flashcard-shell {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 28rem;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.6rem;
+  padding-right: 3rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.card-meta span {
+  min-width: 0;
+  overflow: hidden;
+  padding: 0.45rem 0.62rem;
+  border: 1px solid rgba(101, 116, 135, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-menu {
+  position: absolute;
+  top: 0.05rem;
+  right: 0;
+  z-index: 5;
+}
+
+.menu-trigger {
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--muted);
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.menu-trigger:hover,
+.card-menu.is-open .menu-trigger {
+  color: var(--text);
+  box-shadow: 0 8px 20px rgba(20, 33, 48, 0.1);
+}
+
+.menu-panel {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  display: none;
+  min-width: 8.5rem;
+  padding: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.card-menu.is-open .menu-panel {
+  display: block;
+}
+
+.delete-action {
+  width: 100%;
+  min-height: 2.3rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: var(--danger);
+  cursor: pointer;
+  font-weight: 800;
+  text-align: left;
+}
+
+.delete-action:hover,
+.delete-action:focus-visible {
+  background: var(--danger-bg);
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: clamp(24rem, 56vh, 34rem);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  perspective: 1200px;
+  text-align: left;
+}
+
+.flashcard:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.35);
+  outline-offset: 4px;
+  border-radius: 0.9rem;
+}
+
+.flashcard-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 220ms ease;
+}
+
+.flashcard.is-flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1.45rem;
+  border: 1px solid rgba(221, 228, 237, 0.9);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+  backface-visibility: hidden;
+}
+
+.face-front {
+  gap: 0.9rem;
+}
+
+.face-back {
+  gap: 0.95rem;
+  border-color: rgba(15, 118, 110, 0.22);
+  background: linear-gradient(145deg, #ffffff, #edf8f6);
+  transform: rotateY(180deg);
+}
+
+.face-label {
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.keyword {
+  overflow-wrap: anywhere;
+  font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+  line-height: 1.08;
+}
+
+.prompt,
+.answer {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.answer {
+  color: #243241;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 760px) {
+  .app-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1.3rem;
+  }
+
+  .header-actions {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .text-button {
+    flex: 1 1 9rem;
+  }
+
+  .flashcard-shell {
+    min-height: 24rem;
+  }
+
+  .study-stage {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    min-height: auto;
+  }
+
+  .single-card {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .nav-button {
+    grid-row: 2;
+    width: 100%;
+    max-width: 10rem;
+    justify-self: center;
+  }
+
+  .flashcard {
+    height: 22rem;
+  }
+}
