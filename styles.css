@@ -83,6 +83,61 @@ h1 {
   white-space: nowrap;
 }
 
+.select-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  padding: 0.32rem 0.42rem 0.32rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 8px 20px rgba(20, 33, 48, 0.08);
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.chapter-select {
+  max-width: min(22rem, 42vw);
+  min-height: 1.9rem;
+  border: 0;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  gap: 0.25rem;
+  min-height: 2.5rem;
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 8px 20px rgba(20, 33, 48, 0.08);
+}
+
+.mode-button {
+  min-height: 1.95rem;
+  padding: 0.35rem 0.8rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.mode-button:hover,
+.mode-button.is-active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
 .icon-button {
   display: inline-flex;
   align-items: center;
@@ -347,6 +402,24 @@ main {
 
   .text-button {
     flex: 1 1 9rem;
+  }
+
+  .select-control,
+  .mode-toggle {
+    width: 100%;
+  }
+
+  .select-control {
+    justify-content: space-between;
+  }
+
+  .chapter-select {
+    flex: 1;
+    max-width: none;
+  }
+
+  .mode-button {
+    flex: 1;
   }
 
   .flashcard-shell {

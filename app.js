@@ -2,20 +2,25 @@ const deckTitle = document.querySelector("#deck-title");
 const cardCount = document.querySelector("#card-count");
 const cardStage = document.querySelector("#card-stage");
 const statusText = document.querySelector("#status");
+const chapterFilter = document.querySelector("#chapter-filter");
+const modeButtons = document.querySelectorAll("[data-mode]");
 const openButton = document.querySelector("#open-button");
 const exportButton = document.querySelector("#export-button");
-const shuffleButton = document.querySelector("#shuffle-button");
 const fileInput = document.querySelector("#file-input");
 const previousButton = document.querySelector("#previous-card");
 const nextButton = document.querySelector("#next-card");
 
 const cardsKeys = ["flashcards", "clashcards", "cards"];
 const localDeckKey = "staticFlashcardsDeck";
+const allChaptersValue = "__all__";
 
 let deckData = null;
 let cardsKey = "clashcards";
+let allCards = [];
 let cards = [];
 let currentIndex = 0;
+let currentMode = "shuffled";
+let currentChapter = allChaptersValue;
 let fileHandle = null;
 
 const fallback = (value, defaultValue = "Untitled") => {
@@ -57,6 +62,26 @@ const normalizeCard = (card) => Object.fromEntries(
   Object.entries(card).map(([key, value]) => [key, cleanText(value)]),
 );
 
+const chapterForCard = (card) => fallback(card.chapter, "No chapter");
+
+const getFilteredCards = () => {
+  if (currentChapter === allChaptersValue) {
+    return [...allCards];
+  }
+
+  return allCards.filter((card) => chapterForCard(card) === currentChapter);
+};
+
+const shuffleList = (list) => list
+  .map((card) => ({ card, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({ card }) => card);
+
+const createOrderedCards = () => {
+  const filteredCards = getFilteredCards();
+  return currentMode === "shuffled" ? shuffleList(filteredCards) : filteredCards;
+};
+
 const updateCount = () => {
   cardCount.textContent = cards.length === 0 ? "0 cards" : `${currentIndex + 1} / ${cards.length}`;
 };
@@ -68,11 +93,50 @@ const updateNavigation = () => {
   exportButton.disabled = !deckData;
 };
 
-const shuffleCards = () => {
-  cards = cards
-    .map((card) => ({ card, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ card }) => card);
+const updateModeButtons = () => {
+  modeButtons.forEach((button) => {
+    const isActive = button.dataset.mode === currentMode;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+};
+
+const populateChapterFilter = () => {
+  const chapters = [];
+  allCards.forEach((card) => {
+    const chapter = chapterForCard(card);
+    if (!chapters.includes(chapter)) {
+      chapters.push(chapter);
+    }
+  });
+
+  if (currentChapter !== allChaptersValue && !chapters.includes(currentChapter)) {
+    currentChapter = allChaptersValue;
+  }
+
+  const allOption = document.createElement("option");
+  allOption.value = allChaptersValue;
+  allOption.textContent = "All chapters";
+  chapterFilter.replaceChildren(allOption);
+
+  chapters.forEach((chapter) => {
+    const option = document.createElement("option");
+    option.value = chapter;
+    option.textContent = chapter;
+    chapterFilter.append(option);
+  });
+
+  chapterFilter.value = currentChapter;
+};
+
+const rebuildCards = ({ resetIndex = true } = {}) => {
+  cards = createOrderedCards();
+  if (resetIndex) {
+    currentIndex = 0;
+  } else if (currentIndex >= cards.length) {
+    currentIndex = Math.max(cards.length - 1, 0);
+  }
+  renderCard();
 };
 
 const closeOpenMenus = (exceptMenu = null) => {
@@ -85,7 +149,7 @@ const closeOpenMenus = (exceptMenu = null) => {
   });
 };
 
-const applyDeck = (data, shouldShuffle = true) => {
+const applyDeck = (data) => {
   const foundKey = getCardsKey(data);
   if (!foundKey) {
     throw new Error("Deck JSON must include a flashcards, clashcards, or cards list.");
@@ -93,13 +157,12 @@ const applyDeck = (data, shouldShuffle = true) => {
 
   deckData = data;
   cardsKey = foundKey;
-  cards = deckData[cardsKey].map(normalizeCard);
-  if (shouldShuffle) {
-    shuffleCards();
-  }
+  allCards = deckData[cardsKey].map(normalizeCard);
+  currentChapter = allChaptersValue;
   currentIndex = 0;
   deckTitle.textContent = fallback(cleanText(deckData.title), "Flashcards");
-  renderCard();
+  populateChapterFilter();
+  rebuildCards();
 };
 
 const saveDeckToBrowser = () => {
@@ -144,7 +207,7 @@ const createCard = (card) => {
   meta.className = "card-meta";
 
   const chapter = document.createElement("span");
-  chapter.textContent = fallback(card.chapter, "No chapter");
+  chapter.textContent = chapterForCard(card);
 
   const group = document.createElement("span");
   group.textContent = fallback(card.concept_group, "No concept group");
@@ -250,9 +313,10 @@ const renderCard = () => {
 
   updateCount();
   updateNavigation();
+  updateModeButtons();
 
   if (cards.length === 0) {
-    setStatus("No cards left in this deck.");
+    setStatus(allCards.length === 0 ? "No cards left in this deck." : "No cards match this chapter.");
     return;
   }
 
@@ -265,13 +329,29 @@ const deleteCard = async (cardId) => {
     return;
   }
 
+  const chapterWasAvailable = currentChapter === allChaptersValue
+    || allCards.some((card) => chapterForCard(card) === currentChapter && String(card.id) !== String(cardId));
+
   deckData[cardsKey] = deckData[cardsKey].filter((card) => String(card.id) !== String(cardId));
+  allCards = allCards.filter((card) => String(card.id) !== String(cardId));
+
   if (Number.isInteger(deckData.card_count)) {
     deckData.card_count = deckData[cardsKey].length;
   }
 
-  cards = cards.filter((card) => String(card.id) !== String(cardId));
-  currentIndex = Math.min(currentIndex, Math.max(cards.length - 1, 0));
+  populateChapterFilter();
+
+  if (currentMode === "shuffled" && chapterWasAvailable) {
+    cards = cards.filter((card) => String(card.id) !== String(cardId));
+    if (currentIndex >= cards.length) {
+      currentIndex = Math.max(cards.length - 1, 0);
+    }
+  } else {
+    cards = createOrderedCards();
+    if (currentIndex >= cards.length) {
+      currentIndex = Math.max(cards.length - 1, 0);
+    }
+  }
 
   try {
     const savedToFile = await writeDeckToFile();
@@ -342,6 +422,20 @@ const loadBundledDeck = async () => {
   saveDeckToBrowser();
 };
 
+modeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    currentMode = button.dataset.mode;
+    closeOpenMenus();
+    rebuildCards();
+  });
+});
+
+chapterFilter.addEventListener("change", () => {
+  currentChapter = chapterFilter.value;
+  closeOpenMenus();
+  rebuildCards();
+});
+
 openButton.addEventListener("click", async () => {
   try {
     await openDeckFile();
@@ -353,12 +447,6 @@ openButton.addEventListener("click", async () => {
 exportButton.addEventListener("click", exportDeck);
 fileInput.addEventListener("change", () => {
   loadDeckFromInput().catch(() => setStatus("Could not open JSON deck."));
-});
-
-shuffleButton.addEventListener("click", () => {
-  shuffleCards();
-  currentIndex = 0;
-  renderCard();
 });
 
 previousButton.addEventListener("click", () => {
@@ -387,6 +475,10 @@ document.addEventListener("keydown", (event) => {
     closeOpenMenus();
   }
 
+  if (event.target.closest("input, select, textarea")) {
+    return;
+  }
+
   if (event.key === "ArrowLeft") {
     previousButton.click();
   }
@@ -399,4 +491,5 @@ document.addEventListener("keydown", (event) => {
 loadBundledDeck().catch(() => {
   setStatus("Could not load flashcards.json. Use Open JSON.");
   updateNavigation();
+  updateModeButtons();
 });
