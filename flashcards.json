@@ -1,10 +1,10 @@
 {
   "title": "Economics syllabus flashcards",
   "source_file": "144862724451682.pdf(1).pdf",
-  "format_note": "Each clashcard has a context-specific front and a short, accurate definition as the back.",
+  "format_note": "Each flashcard has a context-specific front and a short, accurate definition as the back.",
   "source_note": "Cards are based on the visible 'Suggested concepts' boxes in the uploaded 4-page syllabus excerpt. Terms visibly crossed out in the source are included and marked as 'crossed_out_in_source'.",
   "card_count": 144,
-  "clashcards": [
+  "flashcards": [
     {
       "id": "card_001",
       "chapter": "D1 Market structures",
@@ -1282,166 +1282,6 @@
       "keyword": "shifts in AD and AS curves",
       "front": "E Principles of macroeconomics — shifts in AD and AS curves",
       "back": "Changes in factors other than the price level move the AD or AS curve.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_130",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "economic growth",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — economic growth",
-      "back": "An increase in real output or real GDP over time.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_131",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "balanced government / national budget",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — balanced government / national budget",
-      "back": "Government spending equals government revenue.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_132",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "budget deficit",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — budget deficit",
-      "back": "Government spending is greater than government revenue.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_133",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "budget surplus",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — budget surplus",
-      "back": "Government revenue is greater than government spending.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_134",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "national debt",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — national debt",
-      "back": "The total accumulated amount the government owes.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_135",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "price stability",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — price stability",
-      "back": "Low and stable inflation.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_136",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "low unemployment",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — low unemployment",
-      "back": "A macroeconomic goal where most people willing and able to work can find jobs.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_137",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "equilibrium in the balance of payments",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — equilibrium in the balance of payments",
-      "back": "External payments are sustainable, without persistent large deficits or surpluses.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_138",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "equal distribution of income",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — equal distribution of income",
-      "back": "Income is shared more fairly across the population.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_139",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "sustainability",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — sustainability",
-      "back": "Economic activity meets current needs without damaging future living standards.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_140",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "economic stability",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — economic stability",
-      "back": "Avoiding large fluctuations in growth, inflation, employment and output.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_141",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "improving productivity",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — improving productivity",
-      "back": "Increasing output per unit of input, such as output per worker.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_143",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "rate of economic growth",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — rate of economic growth",
-      "back": "The percentage increase in real GDP over a period.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_144",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "rate of inflation",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — rate of inflation",
-      "back": "The percentage increase in the general price level over a period.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_145",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "level of unemployment",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — level of unemployment",
-      "back": "The number or percentage of people unemployed in the labour force.",
-      "source_page": 4,
-      "status": "visible"
-    },
-    {
-      "id": "card_146",
-      "chapter": "S7 A Introduction to macroeconomic objectives and policies",
-      "concept_group": "Macroeconomic objectives and indicators",
-      "keyword": "state of the balance of payments",
-      "front": "S7 A Introduction to macroeconomic objectives and policies — state of the balance of payments",
-      "back": "The overall condition of a country’s transactions with the rest of the world.",
       "source_page": 4,
       "status": "visible"
     }

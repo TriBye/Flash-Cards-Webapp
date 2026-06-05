@@ -4,24 +4,16 @@ const cardStage = document.querySelector("#card-stage");
 const statusText = document.querySelector("#status");
 const chapterFilter = document.querySelector("#chapter-filter");
 const modeButtons = document.querySelectorAll("[data-mode]");
-const openButton = document.querySelector("#open-button");
-const exportButton = document.querySelector("#export-button");
-const fileInput = document.querySelector("#file-input");
 const previousButton = document.querySelector("#previous-card");
 const nextButton = document.querySelector("#next-card");
 
-const cardsKeys = ["flashcards", "clashcards", "cards"];
-const localDeckKey = "staticFlashcardsDeck";
 const allChaptersValue = "__all__";
 
-let deckData = null;
-let cardsKey = "clashcards";
 let allCards = [];
 let cards = [];
 let currentIndex = 0;
 let currentMode = "shuffled";
 let currentChapter = allChaptersValue;
-let fileHandle = null;
 
 const fallback = (value, defaultValue = "Untitled") => {
   if (typeof value !== "string" || value.trim() === "") {
@@ -56,8 +48,6 @@ const setStatus = (message, visible = true) => {
   statusText.hidden = !visible;
 };
 
-const getCardsKey = (data) => cardsKeys.find((key) => Array.isArray(data?.[key]));
-
 const normalizeCard = (card) => Object.fromEntries(
   Object.entries(card).map(([key, value]) => [key, cleanText(value)]),
 );
@@ -90,7 +80,6 @@ const updateNavigation = () => {
   const hasCards = cards.length > 0;
   previousButton.disabled = !hasCards;
   nextButton.disabled = !hasCards;
-  exportButton.disabled = !deckData;
 };
 
 const updateModeButtons = () => {
@@ -129,73 +118,23 @@ const populateChapterFilter = () => {
   chapterFilter.value = currentChapter;
 };
 
-const rebuildCards = ({ resetIndex = true } = {}) => {
+const rebuildCards = () => {
   cards = createOrderedCards();
-  if (resetIndex) {
-    currentIndex = 0;
-  } else if (currentIndex >= cards.length) {
-    currentIndex = Math.max(cards.length - 1, 0);
-  }
+  currentIndex = 0;
   renderCard();
 };
 
-const closeOpenMenus = (exceptMenu = null) => {
-  document.querySelectorAll(".card-menu.is-open").forEach((menu) => {
-    if (menu !== exceptMenu) {
-      menu.classList.remove("is-open");
-      const button = menu.querySelector(".menu-trigger");
-      button?.setAttribute("aria-expanded", "false");
-    }
-  });
-};
-
 const applyDeck = (data) => {
-  const foundKey = getCardsKey(data);
-  if (!foundKey) {
-    throw new Error("Deck JSON must include a flashcards, clashcards, or cards list.");
+  if (!Array.isArray(data?.flashcards)) {
+    throw new Error("Deck JSON must include a flashcards list.");
   }
 
-  deckData = data;
-  cardsKey = foundKey;
-  allCards = deckData[cardsKey].map(normalizeCard);
+  allCards = data.flashcards.map(normalizeCard);
   currentChapter = allChaptersValue;
   currentIndex = 0;
-  deckTitle.textContent = fallback(cleanText(deckData.title), "Flashcards");
+  deckTitle.textContent = fallback(cleanText(data.title), "Flashcards");
   populateChapterFilter();
   rebuildCards();
-};
-
-const saveDeckToBrowser = () => {
-  if (deckData) {
-    localStorage.setItem(localDeckKey, JSON.stringify(deckData));
-  }
-};
-
-const writeDeckToFile = async () => {
-  if (!fileHandle || !deckData) {
-    saveDeckToBrowser();
-    return false;
-  }
-
-  const writable = await fileHandle.createWritable();
-  await writable.write(`${JSON.stringify(deckData, null, 2)}\n`);
-  await writable.close();
-  return true;
-};
-
-const exportDeck = () => {
-  if (!deckData) {
-    return;
-  }
-
-  const blob = new Blob([`${JSON.stringify(deckData, null, 2)}\n`], {
-    type: "application/json",
-  });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "flashcards.json";
-  link.click();
-  URL.revokeObjectURL(link.href);
 };
 
 const createCard = (card) => {
@@ -213,27 +152,6 @@ const createCard = (card) => {
   group.textContent = fallback(card.concept_group, "No concept group");
 
   meta.append(chapter, group);
-
-  const menu = document.createElement("div");
-  menu.className = "card-menu";
-
-  const menuButton = document.createElement("button");
-  menuButton.className = "menu-trigger icon-button";
-  menuButton.type = "button";
-  menuButton.setAttribute("aria-label", `Open menu for ${fallback(card.keyword, "card")}`);
-  menuButton.setAttribute("aria-expanded", "false");
-  menuButton.textContent = "\u22ef";
-
-  const menuPanel = document.createElement("div");
-  menuPanel.className = "menu-panel";
-
-  const deleteButton = document.createElement("button");
-  deleteButton.type = "button";
-  deleteButton.className = "delete-action";
-  deleteButton.textContent = "Delete";
-
-  menuPanel.append(deleteButton);
-  menu.append(menuButton, menuPanel);
 
   const flipButton = document.createElement("button");
   flipButton.className = "flashcard";
@@ -276,31 +194,10 @@ const createCard = (card) => {
   flipButton.append(inner);
 
   flipButton.addEventListener("click", () => {
-    closeOpenMenus();
     flipButton.classList.toggle("is-flipped");
   });
 
-  menuButton.addEventListener("click", (event) => {
-    event.stopPropagation();
-    const isOpen = menu.classList.toggle("is-open");
-    closeOpenMenus(menu);
-    menuButton.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  deleteButton.addEventListener("click", async (event) => {
-    event.stopPropagation();
-    closeOpenMenus();
-
-    const shouldDelete = window.confirm(`Delete "${fallback(card.keyword, "this card")}"?`);
-    if (!shouldDelete) {
-      return;
-    }
-
-    deleteButton.disabled = true;
-    await deleteCard(card.id);
-  });
-
-  shell.append(meta, menu, flipButton);
+  shell.append(meta, flipButton);
   return shell;
 };
 
@@ -316,7 +213,7 @@ const renderCard = () => {
   updateModeButtons();
 
   if (cards.length === 0) {
-    setStatus(allCards.length === 0 ? "No cards left in this deck." : "No cards match this chapter.");
+    setStatus(allCards.length === 0 ? "No cards in this deck." : "No cards match this chapter.");
     return;
   }
 
@@ -324,129 +221,25 @@ const renderCard = () => {
   cardStage.append(createCard(cards[currentIndex]));
 };
 
-const deleteCard = async (cardId) => {
-  if (!deckData) {
-    return;
-  }
-
-  const chapterWasAvailable = currentChapter === allChaptersValue
-    || allCards.some((card) => chapterForCard(card) === currentChapter && String(card.id) !== String(cardId));
-
-  deckData[cardsKey] = deckData[cardsKey].filter((card) => String(card.id) !== String(cardId));
-  allCards = allCards.filter((card) => String(card.id) !== String(cardId));
-
-  if (Number.isInteger(deckData.card_count)) {
-    deckData.card_count = deckData[cardsKey].length;
-  }
-
-  populateChapterFilter();
-
-  if (currentMode === "shuffled" && chapterWasAvailable) {
-    cards = cards.filter((card) => String(card.id) !== String(cardId));
-    if (currentIndex >= cards.length) {
-      currentIndex = Math.max(cards.length - 1, 0);
-    }
-  } else {
-    cards = createOrderedCards();
-    if (currentIndex >= cards.length) {
-      currentIndex = Math.max(cards.length - 1, 0);
-    }
-  }
-
-  try {
-    const savedToFile = await writeDeckToFile();
-    setStatus(savedToFile ? "Saved." : "Saved in browser. Export JSON to write a file.", true);
-    window.setTimeout(() => {
-      if (cards.length > 0) {
-        setStatus("", false);
-      }
-    }, 1800);
-  } catch (error) {
-    saveDeckToBrowser();
-    setStatus("Saved in browser. Export JSON to write a file.", true);
-  }
-
-  renderCard();
-};
-
-const openDeckFile = async () => {
-  if (!("showOpenFilePicker" in window)) {
-    fileInput.click();
-    return;
-  }
-
-  const [handle] = await window.showOpenFilePicker({
-    multiple: false,
-    types: [
-      {
-        description: "JSON files",
-        accept: {
-          "application/json": [".json"],
-        },
-      },
-    ],
-  });
-
-  const file = await handle.getFile();
-  const data = JSON.parse(await file.text());
-  fileHandle = handle;
-  applyDeck(data);
-  saveDeckToBrowser();
-};
-
-const loadDeckFromInput = async () => {
-  const [file] = fileInput.files;
-  if (!file) {
-    return;
-  }
-
-  fileHandle = null;
-  applyDeck(JSON.parse(await file.text()));
-  saveDeckToBrowser();
-  fileInput.value = "";
-};
-
 const loadBundledDeck = async () => {
-  const savedDeck = localStorage.getItem(localDeckKey);
-  if (savedDeck) {
-    applyDeck(JSON.parse(savedDeck));
-    return;
-  }
-
   const response = await fetch("flashcards.json", { cache: "no-store" });
   if (!response.ok) {
     throw new Error("Could not load bundled deck");
   }
 
   applyDeck(await response.json());
-  saveDeckToBrowser();
 };
 
 modeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     currentMode = button.dataset.mode;
-    closeOpenMenus();
     rebuildCards();
   });
 });
 
 chapterFilter.addEventListener("change", () => {
   currentChapter = chapterFilter.value;
-  closeOpenMenus();
   rebuildCards();
-});
-
-openButton.addEventListener("click", async () => {
-  try {
-    await openDeckFile();
-  } catch (error) {
-    setStatus("Could not open JSON deck.");
-  }
-});
-
-exportButton.addEventListener("click", exportDeck);
-fileInput.addEventListener("change", () => {
-  loadDeckFromInput().catch(() => setStatus("Could not open JSON deck."));
 });
 
 previousButton.addEventListener("click", () => {
@@ -455,7 +248,6 @@ previousButton.addEventListener("click", () => {
   }
 
   currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-  closeOpenMenus();
   renderCard();
 });
 
@@ -465,16 +257,10 @@ nextButton.addEventListener("click", () => {
   }
 
   currentIndex = (currentIndex + 1) % cards.length;
-  closeOpenMenus();
   renderCard();
 });
 
-document.addEventListener("click", () => closeOpenMenus());
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeOpenMenus();
-  }
-
   if (event.target.closest("input, select, textarea")) {
     return;
   }
@@ -489,7 +275,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 loadBundledDeck().catch(() => {
-  setStatus("Could not load flashcards.json. Use Open JSON.");
+  setStatus("Could not load flashcards.json.");
   updateNavigation();
   updateModeButtons();
 });

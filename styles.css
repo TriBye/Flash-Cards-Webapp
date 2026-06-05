@@ -228,7 +228,6 @@ main {
   align-items: center;
   gap: 0.45rem;
   min-height: 2.6rem;
-  padding-right: 3rem;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
@@ -243,64 +242,6 @@ main {
   background: rgba(255, 255, 255, 0.7);
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.card-menu {
-  position: absolute;
-  top: 0.05rem;
-  right: 0;
-  z-index: 5;
-}
-
-.menu-trigger {
-  width: 2.35rem;
-  height: 2.35rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.86);
-  color: var(--muted);
-  font-size: 1.45rem;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.menu-trigger:hover,
-.card-menu.is-open .menu-trigger {
-  color: var(--text);
-  box-shadow: 0 8px 20px rgba(20, 33, 48, 0.1);
-}
-
-.menu-panel {
-  position: absolute;
-  top: calc(100% + 0.35rem);
-  right: 0;
-  display: none;
-  min-width: 8.5rem;
-  padding: 0.4rem;
-  border: 1px solid var(--line);
-  border-radius: 0.55rem;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.card-menu.is-open .menu-panel {
-  display: block;
-}
-
-.delete-action {
-  width: 100%;
-  min-height: 2.3rem;
-  border: 0;
-  border-radius: 0.4rem;
-  background: transparent;
-  color: var(--danger);
-  cursor: pointer;
-  font-weight: 800;
-  text-align: left;
-}
-
-.delete-action:hover,
-.delete-action:focus-visible {
-  background: var(--danger-bg);
 }
 
 .flashcard {
